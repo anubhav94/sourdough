@@ -12,7 +12,8 @@ class Controller
 {
 private:
   bool debug_; /* Enables debugging output */
-
+  double throughput;
+  double latency;
   map<string, string> markov;
 
   /* Add member variables here */
@@ -25,7 +26,7 @@ public:
   /* Default constructor */
   Controller( const bool debug );
 
-  void initialize_markov( void );
+  map<string,string> initialize_markov( void );
 
   /* Get current window size, in datagrams */
   unsigned int window_size( void );
@@ -43,6 +44,9 @@ public:
   /* How long to wait (in milliseconds) if there are no acks
      before sending one more datagram */
   unsigned int timeout_ms( void );
+  
+  double current_latency ( void );
+  double current_throughput ( void );
 };
 
 #endif
