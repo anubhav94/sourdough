@@ -24,6 +24,11 @@ private:
 
   static MarkovType markov_;
 
+  double throughput;
+  double latency;
+
+
+
   /* Add member variables here */
 
 public:
@@ -54,6 +59,9 @@ public:
   /* How long to wait (in milliseconds) if there are no acks
      before sending one more datagram */
   unsigned int timeout_ms( void );
+  
+  double current_latency ( void );
+  double current_throughput ( void );
 };
 
 #endif

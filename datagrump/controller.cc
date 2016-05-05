@@ -7,7 +7,7 @@ using namespace std;
 
 /* Default constructor */
 Controller::Controller( const bool debug )
-  : debug_( debug )
+  : debug_( debug ), throughput(0.0), latency(-1)
 { 
 }
 
@@ -19,8 +19,6 @@ Controller::MarkovType Controller::markov_ = []
 
 void Controller::initialize_markov( void )
 {
-    //iterate through possible states
-    //markov.insert(make_pair("key","val"));
 }
 
 /* Get current window size, in datagrams */
@@ -77,4 +75,14 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
 unsigned int Controller::timeout_ms( void )
 {
   return 1000; /* timeout of one second */
+}
+
+double Controller::current_throughput( void)
+{
+  return 5.5;
+}
+
+double Controller::current_latency( void)
+{
+  return 5.5;
 }
