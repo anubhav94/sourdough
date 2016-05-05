@@ -2,6 +2,9 @@
 #define CONTROLLER_HH
 
 #include <cstdint>
+#include <map>
+
+using namespace std;
 
 /* Congestion controller interface */
 
@@ -9,6 +12,8 @@ class Controller
 {
 private:
   bool debug_; /* Enables debugging output */
+
+  map<string, string> markov;
 
   /* Add member variables here */
 
@@ -19,6 +24,8 @@ public:
 
   /* Default constructor */
   Controller( const bool debug );
+
+  void initialize_markov( void );
 
   /* Get current window size, in datagrams */
   unsigned int window_size( void );

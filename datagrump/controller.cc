@@ -8,7 +8,15 @@ using namespace std;
 /* Default constructor */
 Controller::Controller( const bool debug )
   : debug_( debug )
-{}
+{
+
+}
+
+void Controller::initialize_markov( void )
+{
+    //iterate through possible states
+    markov.insert(make_pair("key","val"));
+}
 
 /* Get current window size, in datagrams */
 unsigned int Controller::window_size( void )
