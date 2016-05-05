@@ -4,16 +4,25 @@
 #include <cstdint>
 #include <map>
 
-using namespace std;
 
 /* Congestion controller interface */
 
 class Controller
 {
+ 
+  struct MarkovKey
+  {
+      uint64_t throughput;
+      uint64_t interarrival;
+      uint64_t pastaction;
+  };
+
+  using MarkovType = std::map<MarkovKey, std::string>;
+
 private:
   bool debug_; /* Enables debugging output */
 
-  map<string, string> markov;
+  static MarkovType markov_;
 
   /* Add member variables here */
 
@@ -21,6 +30,8 @@ public:
   /* Public interface for the congestion controller */
   /* You can change these if you prefer, but will need to change
      the call site as well (in sender.cc) */
+
+  //typedef std::map<std::string, std::string> MarkovType;
 
   /* Default constructor */
   Controller( const bool debug );
