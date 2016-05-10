@@ -43,6 +43,7 @@ void Controller::datagram_was_sent( const uint64_t sequence_number,
 {
   /* Default: take no action */
   packets[sequence_number % NUM_PACKETS] = send_timestamp;
+  update_throughput(send_timestamp);
   if ( debug_ ) {
     cerr << "At time " << send_timestamp
 	 << " sent datagram " << sequence_number << endl;
@@ -61,6 +62,7 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
 {
   /* Default: take no action */
   update_latency(timestamp_ack_received - send_timestamp_acked);
+  update_throughput(timestamp_ack_received);
   if ( debug_ ) {
     cerr << "At time " << timestamp_ack_received
 	 << " received ack for datagram " << sequence_number_acked
