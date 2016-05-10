@@ -42,7 +42,7 @@ void Controller::datagram_was_sent( const uint64_t sequence_number,
                                     /* in milliseconds */
 {
   /* Default: take no action */
-
+  packets[sequence_number % NUM_PACKETS] = send_timestamp;
   if ( debug_ ) {
     cerr << "At time " << send_timestamp
 	 << " sent datagram " << sequence_number << endl;
@@ -60,7 +60,7 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
                                /* when the ack was received (by sender) */
 {
   /* Default: take no action */
-
+  update_latency(timestamp_ack_received - send_timestamp_acked);
   if ( debug_ ) {
     cerr << "At time " << timestamp_ack_received
 	 << " received ack for datagram " << sequence_number_acked
@@ -79,10 +79,30 @@ unsigned int Controller::timeout_ms( void )
 
 double Controller::current_throughput( void)
 {
-  return 5.5;
+  return throughput;
 }
 
+/* Send current latency value - calculated as an EWMA */
 double Controller::current_latency( void)
 {
-  return 5.5;
+  return latency;
+}
+
+/* Exponential weighted moving average of RTT for packets */ 
+/* Currently set alpha value to be 0.5 */
+void Controller::update_latency( uint64_t packet_RTT)
+{
+  double alpha = 0.01;
+  latency = latency * (1 - alpha) + packet_RTT * alpha; 	
+}
+
+void Controller::update_throughput(uint64_t current_time_stamp ) { 
+  int i;
+  double current_throughput = 0;
+  for (i = 0; i < NUM_PACKETS; i++) {
+    if (packets[i] < current_time_stamp && (current_time_stamp - packets[i] < 5000)) {
+      current_throughput += PACKET_SIZE;	  
+    } 
+  }
+  throughput = current_throughput / 5000;
 }
