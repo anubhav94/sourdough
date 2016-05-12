@@ -7,18 +7,49 @@ using namespace std;
 
 /* Default constructor */
 Controller::Controller( const bool debug )
-  : debug_( debug ), throughput(0.0), latency(-1)
+  : debug_( debug ), throughput(0.0), latency(-1), current_window_size(50)
 { 
 }
 
-Controller::MarkovType Controller::markov_ = []
+void Controller::do_best_action()
 {
-    MarkovType rval;
-    return rval;
-}();
+    int bestscore = 0;
+    Controller::Action bestaction = none;
+    Controller::MarkovKey temp = current_state;
+    
+    for (int i = sub16; i <= add16; i++)
+    {
+        temp.pastaction = static_cast<Controller::Action>(i);
+        int v = Controller::value(temp);
+        if (v > bestscore) 
+        {
+            bestscore = v;
+            bestaction = static_cast<Controller::Action>(i);
+        }
+    }
 
-void Controller::initialize_markov( void )
+    Controller::take_action(bestaction);
+}
+
+void Controller::take_action(Controller::Action a)
 {
+    switch (a)
+    {
+        case sub16:
+            this->current_window_size = this->current_window_size - 16;
+            break;
+        default:
+            break;
+    }
+}
+
+int Controller::value(Controller::MarkovKey mk)
+{
+    if (mk.pastaction == none)
+    {
+        return 1;
+    }
+    return 1;
 }
 
 /* Get current window size, in datagrams */

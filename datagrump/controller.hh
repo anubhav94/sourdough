@@ -9,12 +9,13 @@
 
 class Controller
 {
+  enum Action { sub16, sub8, sub4, sub2, sub1, none, add1, add2, add4, add8, add16 };
  
   struct MarkovKey
   {
-      uint64_t throughput;
-      uint64_t interarrival;
-      uint64_t pastaction;
+      double throughput;
+      double latency;
+      Action pastaction;
   };
 
   using MarkovType = std::map<MarkovKey, std::string>;
@@ -22,12 +23,15 @@ class Controller
 private:
   bool debug_; /* Enables debugging output */
 
-  static MarkovType markov_;
-
   double throughput;
   double latency;
+  static MarkovKey current_state;
+  static MarkovType markov_chain;
+  int current_window_size;
 
-
+  void do_best_action();
+  void take_action(Action a);
+  int value(Controller::MarkovKey mk);
 
   /* Add member variables here */
 
@@ -40,8 +44,6 @@ public:
 
   /* Default constructor */
   Controller( const bool debug );
-
-  void initialize_markov( void );
 
   /* Get current window size, in datagrams */
   unsigned int window_size( void );
