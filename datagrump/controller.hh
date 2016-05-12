@@ -4,7 +4,8 @@
 #include <cstdint>
 #include <map>
 
-
+#define PACKET_SIZE 1424
+#define NUM_PACKETS 1000
 /* Congestion controller interface */
 
 class Controller
@@ -25,6 +26,7 @@ private:
 
   double throughput;
   double latency;
+
   static MarkovKey current_state;
   static MarkovType markov_chain;
   int current_window_size;
@@ -32,6 +34,9 @@ private:
   void do_best_action();
   void take_action(Action a);
   int value(Controller::MarkovKey mk);
+
+  uint64_t packets[NUM_PACKETS];
+
 
   /* Add member variables here */
 
@@ -64,6 +69,9 @@ public:
   
   double current_latency ( void );
   double current_throughput ( void );
+  void update_latency (uint64_t packetRTT);
+  void update_throughput (uint64_t timestamp);
+
 };
 
 #endif
