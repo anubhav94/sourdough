@@ -7,8 +7,6 @@
 
 using namespace std;
 
-#define REWARD_FACTOR 0.05;
-#define TPUT_UPDATE_TIME 200;
 
 /* Default constructor */
 Controller::Controller( const bool debug )
@@ -36,7 +34,7 @@ Controller::MarkovKey Controller::current_state = []
 void Controller::do_best_action()
 {
     // Update current value for current action
-    markov_chain[current_state] = (markov_chain[current_state] * (1 - REWARD_FACTOR) + (reward() * REWARD_FACTOR);
+    markov_chain[current_state] = (markov_chain[current_state] * (1 - REWARD_FACTOR) + (reward() * REWARD_FACTOR));
     cerr << "Current state: " << current_state.window_size_state << endl;
 
     double bestscore = (double) INT_MIN;
@@ -235,7 +233,7 @@ void Controller::update_throughput(uint64_t current_time_stamp ) {
 }
 
 void Controller::update_markov(uint64_t current_time_stamp) {
-  if (current_time_stamp - this->last_update_timestamp > 100) {
+  if (current_time_stamp - this->last_update_timestamp > STATE_UPDATE_TIME) {
     this->last_update_timestamp = current_time_stamp;
     do_best_action();
   }
