@@ -14,30 +14,42 @@ class Controller
  
   struct MarkovKey
   {
-      double throughput;
-      double latency;
-      Action pastaction;
+       unsigned int window_size_state;
+       Action pastaction;
+       bool operator <(const MarkovKey& mk1) const {
+           if (window_size_state < mk1.window_size_state) {
+               return true;
+           } else if (window_size_state == mk1.window_size_state) {
+		if (pastaction < mk1.pastaction)
+			return true;
+           }
+	   return false;
+
+       }
   };
 
-  using MarkovType = std::map<MarkovKey, std::string>;
+  using MarkovType = std::map<MarkovKey, double>;
 
 private:
   bool debug_; /* Enables debugging output */
 
   double throughput;
   double latency;
-  static MarkovKey current_state;
-  static MarkovType markov_chain;
   int current_window_size;
 
   uint64_t last_update_timestamp;
+  double old_throughput;
+  double old_latency;
+
+  double reward();
   void do_best_action();
   void take_action(Action a);
-  int value(Controller::MarkovKey mk);
-
+  unsigned int get_next_window_size(Action a);
   uint64_t packets[NUM_PACKETS];
 
 
+  static MarkovKey current_state;
+  static MarkovType markov_chain;
   /* Add member variables here */
 
 public:
@@ -67,8 +79,6 @@ public:
      before sending one more datagram */
   unsigned int timeout_ms( void );
   
-  double current_latency ( void );
-  double current_throughput ( void );
   void update_latency (uint64_t packetRTT);
   void update_throughput (uint64_t timestamp);
   void update_markov(uint64_t timestamp);

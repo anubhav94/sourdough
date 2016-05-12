@@ -1,26 +1,64 @@
 #include <iostream>
-
+#include <limits.h>
+#include <stdlib.h>
+#include <ctime>
 #include "controller.hh"
 #include "timestamp.hh"
 
 using namespace std;
 
+#define REWARD_FACTOR 0.05;
+#define TPUT_UPDATE_TIME 200;
+
 /* Default constructor */
 Controller::Controller( const bool debug )
-  : debug_( debug ), throughput(0.0), latency(-1), current_window_size(50), last_update_timestamp(0)
+  : debug_( debug ), throughput(0.0), latency(40), current_window_size(10), 
+    last_update_timestamp(0), old_throughput(0.0), old_latency(40) 
 { 
+    srand(time(NULL));
 }
+
+Controller::MarkovType Controller::markov_chain = []
+{
+    MarkovType mk;
+    return mk;
+}();
+
+Controller::MarkovKey Controller::current_state = []
+{
+    MarkovKey mkey;
+    mkey.window_size_state = 50;
+    mkey.pastaction = none;
+    return mkey;
+}();
+
 
 void Controller::do_best_action()
 {
-    int bestscore = 0;
+    // Update current value for current action
+    markov_chain[current_state] = (markov_chain[current_state] * (1 - REWARD_FACTOR) + (reward() * REWARD_FACTOR);
+    cerr << "Current state: " << current_state.window_size_state << endl;
+
+    double bestscore = (double) INT_MIN;
     Controller::Action bestaction = none;
     Controller::MarkovKey temp = current_state;
-    
+
     for (int i = sub16; i <= add16; i++)
     {
         temp.pastaction = static_cast<Controller::Action>(i);
-        int v = Controller::value(temp);
+	temp.window_size_state = this->get_next_window_size(static_cast<Controller::Action>(i));
+
+	double v;
+
+        if (markov_chain.count(temp) > 0) {
+	    v = markov_chain[temp];
+	    cerr << "Action: " << i << " Value: " << v << endl;
+	} else {
+	    markov_chain[temp] = -abs(i-none);
+	    cerr << -abs(i-none) << endl;
+	    v = -abs(i-none);
+	}
+	
         if (v > bestscore) 
         {
             bestscore = v;
@@ -28,69 +66,107 @@ void Controller::do_best_action()
         }
     }
 
+    if (rand() % 10 < 3)
+	bestaction = static_cast<Controller::Action>(rand() % add16);
+
+
+    cerr << "Taking Action: " << bestaction << endl << endl;
+ 
     Controller::take_action(bestaction);
+    old_latency = latency;
+    old_throughput = throughput;
+}
+// TODO FIX REWARD!!!
+double Controller::reward()
+{
+    double delta_latency = latency - old_latency;
+    double delta_throughput = throughput - old_throughput;
+    
+    double reward = (delta_throughput) - (delta_latency*10);  
+    
+    cerr << "Reward: " << reward << " delta_latency: " << delta_latency << " delta_throughput: " << delta_throughput << endl; 
+    return reward;
 }
 
-void Controller::take_action(Controller::Action a)
+
+unsigned int Controller::get_next_window_size(Controller::Action a)
 {
+    int delta;
     switch (a)
     {
         case sub16:
-            this->current_window_size = this->current_window_size - 16;
+            delta = -16;
             break;
         case sub8:
-            this->current_window_size = this->current_window_size - 8;
+            delta = -8;
             break;
         case sub4:
-            this->current_window_size = this->current_window_size - 4;
+            delta = -4;
             break;
         case sub2:
-            this->current_window_size = this->current_window_size - 2;
+            delta = -2;
             break;
         case sub1:
-            this->current_window_size = this->current_window_size - 1;
+            delta = -1;
             break;
         case add1:
-            this->current_window_size = this->current_window_size + 1;
+            delta = 1;
             break;
         case add2:
-            this->current_window_size = this->current_window_size + 2;
+            delta = 2;
             break;
         case add4:
-            this->current_window_size = this->current_window_size + 4;
+            delta = 4;
             break;
         case add8:
-            this->current_window_size = this->current_window_size + 8;
+            delta = 8;
 	    break;
         case add16:
-            this->current_window_size = this->current_window_size + 16;
+            delta = 16;
 	    break;
         default:
+            delta = 0;
             break;
     }
+
+    unsigned int next_window_size = this->current_window_size + delta;   
+
+    if (delta < 0) 
+    {
+        if (this->current_window_size <= (-1 * delta))
+	{
+	    next_window_size = 1;
+	}
+    }
+
+    if (next_window_size > 300)
+	next_window_size = 300;
+
+    return next_window_size;
 }
 
-int Controller::value(Controller::MarkovKey mk)
+
+void Controller::take_action(Controller::Action a)
 {
-    if (mk.pastaction == none)
-    {
-        return 1;
-    }
-    return 1;
+    unsigned int nw  = this->get_next_window_size(a);
+    this->current_window_size = nw;
+
+    current_state.pastaction = a;
+    current_state.window_size_state = nw;
 }
 
 /* Get current window size, in datagrams */
 unsigned int Controller::window_size( void )
 {
   /* Default: fixed window size of 100 outstanding datagrams */
-  unsigned int the_window_size = 50;
+  /* unsigned int the_window_size = 50;
 
   if ( debug_ ) {
     cerr << "At time " << timestamp_ms()
 	 << " window size is " << the_window_size << endl;
   }
-
-  return the_window_size;
+  */
+  return this->current_window_size;
 }
 
 /* A datagram was sent */
@@ -139,17 +215,6 @@ unsigned int Controller::timeout_ms( void )
   return 1000; /* timeout of one second */
 }
 
-double Controller::current_throughput( void)
-{
-  return throughput;
-}
-
-/* Send current latency value - calculated as an EWMA */
-double Controller::current_latency( void)
-{
-  return latency;
-}
-
 /* Exponential weighted moving average of RTT for packets */ 
 /* Currently set alpha value to be 0.5 */
 void Controller::update_latency( uint64_t packet_RTT)
@@ -162,15 +227,15 @@ void Controller::update_throughput(uint64_t current_time_stamp ) {
   int i;
   double current_throughput = 0;
   for (i = 0; i < NUM_PACKETS; i++) {
-    if (packets[i] < current_time_stamp && (current_time_stamp - packets[i] < 5000)) {
+    if ((current_time_stamp - packets[i]) < TPUT_UPDATE_TIME) {
       current_throughput += PACKET_SIZE;	  
-    } 
+    }
   }
-  throughput = current_throughput / 5000;
+  throughput = current_throughput / TPUT_UPDATE_TIME;
 }
 
 void Controller::update_markov(uint64_t current_time_stamp) {
-  if (current_time_stamp - this->last_update_timestamp > 50) {
+  if (current_time_stamp - this->last_update_timestamp > 100) {
     this->last_update_timestamp = current_time_stamp;
     do_best_action();
   }
