@@ -40,6 +40,8 @@ void Controller::do_best_action()
     double bestscore = (double) INT_MIN;
     Controller::Action bestaction = none;
     Controller::MarkovKey temp = current_state;
+	
+    int num_unvisited = 0;
 
     for (int i = sub16; i <= add16; i++)
     {
@@ -55,6 +57,7 @@ void Controller::do_best_action()
 	    markov_chain[temp] = -abs(i-none);
 	    cerr << -abs(i-none) << endl;
 	    v = -abs(i-none);
+	    num_unvisited++;
 	}
 	
         if (v > bestscore) 
@@ -64,8 +67,8 @@ void Controller::do_best_action()
         }
     }
 
-    if (rand() % 10 < 3)
-	bestaction = static_cast<Controller::Action>(rand() % add16);
+    if (rand() % add16 < (num_unvisited * 2))
+	     bestaction = static_cast<Controller::Action>(rand() % add16);
 
 
     cerr << "Taking Action: " << bestaction << endl << endl;

@@ -8,7 +8,7 @@
 #define NUM_PACKETS 1000
 #define TPUT_UPDATE_TIME 200
 #define STATE_UPDATE_TIME 50
-#define REWARD_FACTOR 0.5
+#define REWARD_FACTOR 0.2
 
 /* Congestion controller interface */
 
