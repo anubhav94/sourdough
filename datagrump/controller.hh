@@ -26,11 +26,11 @@ private:
 
   double throughput;
   double latency;
-
   static MarkovKey current_state;
   static MarkovType markov_chain;
   int current_window_size;
 
+  uint64_t last_update_timestamp;
   void do_best_action();
   void take_action(Action a);
   int value(Controller::MarkovKey mk);
@@ -71,7 +71,7 @@ public:
   double current_throughput ( void );
   void update_latency (uint64_t packetRTT);
   void update_throughput (uint64_t timestamp);
-
+  void update_markov(uint64_t timestamp);
 };
 
 #endif

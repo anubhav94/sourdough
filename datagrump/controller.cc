@@ -7,7 +7,7 @@ using namespace std;
 
 /* Default constructor */
 Controller::Controller( const bool debug )
-  : debug_( debug ), throughput(0.0), latency(-1), current_window_size(50)
+  : debug_( debug ), throughput(0.0), latency(-1), current_window_size(50), last_update_timestamp(0)
 { 
 }
 
@@ -38,6 +38,33 @@ void Controller::take_action(Controller::Action a)
         case sub16:
             this->current_window_size = this->current_window_size - 16;
             break;
+        case sub8:
+            this->current_window_size = this->current_window_size - 8;
+            break;
+        case sub4:
+            this->current_window_size = this->current_window_size - 4;
+            break;
+        case sub2:
+            this->current_window_size = this->current_window_size - 2;
+            break;
+        case sub1:
+            this->current_window_size = this->current_window_size - 1;
+            break;
+        case add1:
+            this->current_window_size = this->current_window_size + 1;
+            break;
+        case add2:
+            this->current_window_size = this->current_window_size + 2;
+            break;
+        case add4:
+            this->current_window_size = this->current_window_size + 4;
+            break;
+        case add8:
+            this->current_window_size = this->current_window_size + 8;
+	    break;
+        case add16:
+            this->current_window_size = this->current_window_size + 16;
+	    break;
         default:
             break;
     }
@@ -75,6 +102,7 @@ void Controller::datagram_was_sent( const uint64_t sequence_number,
   /* Default: take no action */
   packets[sequence_number % NUM_PACKETS] = send_timestamp;
   update_throughput(send_timestamp);
+  update_markov(send_timestamp);
   if ( debug_ ) {
     cerr << "At time " << send_timestamp
 	 << " sent datagram " << sequence_number << endl;
@@ -94,6 +122,7 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
   /* Default: take no action */
   update_latency(timestamp_ack_received - send_timestamp_acked);
   update_throughput(timestamp_ack_received);
+  update_markov(timestamp_ack_received);
   if ( debug_ ) {
     cerr << "At time " << timestamp_ack_received
 	 << " received ack for datagram " << sequence_number_acked
@@ -138,4 +167,11 @@ void Controller::update_throughput(uint64_t current_time_stamp ) {
     } 
   }
   throughput = current_throughput / 5000;
+}
+
+void Controller::update_markov(uint64_t current_time_stamp) {
+  if (current_time_stamp - this->last_update_timestamp > 50) {
+    this->last_update_timestamp = current_time_stamp;
+    do_best_action();
+  }
 }
