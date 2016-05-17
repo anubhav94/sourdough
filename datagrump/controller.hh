@@ -11,6 +11,7 @@
 #define REWARD_FACTOR 0.2
 #define NUM_OLD_STATES 5
 #define INITIAL_WINDOW_SIZE 10
+#define NUM_PAST_ACTIONS 1 
 
 /* Congestion controller interface */
 
@@ -21,13 +22,25 @@ class Controller
   struct MarkovKey
   {
        unsigned int window_size_state;
-       Action pastaction;
+       Action pastaction[NUM_PAST_ACTIONS];
+       unsigned int latency;
        bool operator <(const MarkovKey& mk1) const {
            if (window_size_state < mk1.window_size_state) {
                return true;
            } else if (window_size_state == mk1.window_size_state) {
-		if (pastaction < mk1.pastaction)
+		if (latency < mk1.latency)
 			return true;
+		else if (latency == mk1.latency)
+		{
+			for (int i = 0; i < NUM_PAST_ACTIONS; i++)
+			{
+				if (pastaction[i] < mk1.pastaction[i])
+					return true;
+				else if (pastaction[i] > mk1.pastaction[i])
+					return false;
+			}
+		}
+
            }
 	   return false;
 

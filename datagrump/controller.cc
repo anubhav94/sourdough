@@ -26,7 +26,12 @@ Controller::MarkovKey Controller::current_state = []
 {
     MarkovKey mkey;
     mkey.window_size_state = INITIAL_WINDOW_SIZE;
-    mkey.pastaction = none;
+
+    for (int i = 0; i < NUM_PAST_ACTIONS; i++)
+    {
+	mkey.pastaction[i] = none;
+    }
+    mkey.latency = 0;
     return mkey;
 }();
 
@@ -51,7 +56,7 @@ void Controller::do_best_action()
 
 
 
-    cerr << "Current state: " << current_state.window_size_state << endl;
+    cerr << "Current state: " << current_state.window_size_state << " " << current_state.latency << endl;
 
     double bestscore = (double) INT_MIN;
     Controller::Action bestaction = none;
@@ -61,8 +66,13 @@ void Controller::do_best_action()
 
     for (int i = sub16; i <= add16; i++)
     {
-        temp.pastaction = static_cast<Controller::Action>(i);
+	for (int j = NUM_PAST_ACTIONS - 1; j > 0; j--)
+	{
+		temp.pastaction[j] = current_state.pastaction[j-1];
+	}
+        temp.pastaction[0] = static_cast<Controller::Action>(i);
 	temp.window_size_state = this->get_next_window_size(static_cast<Controller::Action>(i));
+	temp.latency = current_state.latency;
 
 	double v;
 
@@ -73,6 +83,10 @@ void Controller::do_best_action()
 	    markov_chain[temp] = -abs(i-none);
 	    cerr << -abs(i-none) << endl;
 	    v = -abs(i-none);
+	}
+
+	if ((v == -5) || (v == -4) || (v == -3) || (v == -2) || (v == -1) || (v == 0) || (v==1) || (v==2) || (v==3) || (v==4) || (v==5))
+	{
 	    num_unvisited++;
 	}
 	
@@ -83,11 +97,11 @@ void Controller::do_best_action()
         }
     }
 
-    if (rand() % add16 < (num_unvisited * 2))
+    if (rand() % add16 < (num_unvisited+1))
 	     bestaction = static_cast<Controller::Action>(rand() % add16);
 
 
-    cerr << "Taking Action: " << bestaction << endl << endl;
+    cerr << "num_unvisited: " << num_unvisited << " Taking Action: " << bestaction << endl << endl;
  
     Controller::take_action(bestaction);
     old_latency = latency;
@@ -96,12 +110,12 @@ void Controller::do_best_action()
 // TODO FIX REWARD!!!
 double Controller::reward()
 {
-    double delta_latency = latency - old_latency;
-    double delta_throughput = throughput - old_throughput;
+    //double delta_latency = latency - old_latency;
+    double delta_throughput = throughput - old_throughput; 
     
-    double reward = (delta_throughput) - (delta_latency*10);  
+    double reward = delta_throughput - ((latency/10) * (current_state.pastaction[0]-5)) ;  
     
-    cerr << "Reward: " << reward << " delta_latency: " << delta_latency << " delta_throughput: " << delta_throughput << endl; 
+    cerr << "Reward: " << reward << " latency: " << latency << " delta_throughput: " << delta_throughput << endl; 
     return reward;
 }
 
@@ -168,8 +182,13 @@ void Controller::take_action(Controller::Action a)
     unsigned int nw  = this->get_next_window_size(a);
     this->current_window_size = nw;
 
-    current_state.pastaction = a;
+    for (int i = NUM_PAST_ACTIONS - 1; i > 0; i--)
+    {
+	current_state.pastaction[i] = current_state.pastaction[i-1];
+    }
+    current_state.pastaction[0] = a;
     current_state.window_size_state = nw;
+    current_state.latency = ((unsigned int)latency) / 100;
 }
 
 /* Get current window size, in datagrams */
@@ -236,7 +255,7 @@ unsigned int Controller::timeout_ms( void )
 /* Currently set alpha value to be 0.5 */
 void Controller::update_latency( uint64_t packet_RTT)
 {
-  double alpha = 0.01;
+  double alpha = 0.1;
   latency = latency * (1 - alpha) + packet_RTT * alpha; 	
 }
 
