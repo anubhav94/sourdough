@@ -9,6 +9,8 @@
 #define TPUT_UPDATE_TIME 200
 #define STATE_UPDATE_TIME 50
 #define REWARD_FACTOR 0.2
+#define NUM_OLD_STATES 5
+#define INITIAL_WINDOW_SIZE 10
 
 /* Congestion controller interface */
 
@@ -50,6 +52,8 @@ private:
   void take_action(Action a);
   unsigned int get_next_window_size(Action a);
   uint64_t packets[NUM_PACKETS];
+
+  MarkovKey past_states[NUM_OLD_STATES];
 
 
   static MarkovKey current_state;

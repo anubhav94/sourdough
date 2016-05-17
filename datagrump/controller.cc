@@ -10,7 +10,7 @@ using namespace std;
 
 /* Default constructor */
 Controller::Controller( const bool debug )
-  : debug_( debug ), throughput(0.0), latency(40), current_window_size(10), 
+  : debug_( debug ), throughput(0.0), latency(40), current_window_size(INITIAL_WINDOW_SIZE), 
     last_update_timestamp(0), old_throughput(0.0), old_latency(40) 
 { 
     srand(time(NULL));
@@ -25,7 +25,7 @@ Controller::MarkovType Controller::markov_chain = []
 Controller::MarkovKey Controller::current_state = []
 {
     MarkovKey mkey;
-    mkey.window_size_state = 50;
+    mkey.window_size_state = INITIAL_WINDOW_SIZE;
     mkey.pastaction = none;
     return mkey;
 }();
@@ -33,8 +33,24 @@ Controller::MarkovKey Controller::current_state = []
 
 void Controller::do_best_action()
 {
-    // Update current value for current action
+    double cur_reward = reward();
+    // Update current value for current action using reward
+    for (int i = 0; i < NUM_OLD_STATES; i++) {
+        double ratio_factor = 0.1 * ((NUM_OLD_STATES - i) / NUM_OLD_STATES);
+        if (past_states[i].window_size_state != 0)
+          markov_chain[past_states[i]] = (markov_chain[past_states[i]] * (1 - (REWARD_FACTOR * ratio_factor))) + (cur_reward * REWARD_FACTOR * ratio_factor);
+    }
     markov_chain[current_state] = (markov_chain[current_state] * (1 - REWARD_FACTOR) + (reward() * REWARD_FACTOR));
+
+
+    // Remove oldest state
+    for (int i = NUM_OLD_STATES; i > 1; i--) {
+      past_states[i - 1] = past_states[i-2];
+    }
+    past_states[0] = current_state;
+
+
+
     cerr << "Current state: " << current_state.window_size_state << endl;
 
     double bestscore = (double) INT_MIN;
