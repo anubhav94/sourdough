@@ -6,12 +6,14 @@
 
 #define PACKET_SIZE 1424
 #define NUM_PACKETS 1000
-#define TPUT_UPDATE_TIME 200
+#define TPUT_UPDATE_TIME 50
 #define STATE_UPDATE_TIME 50
 #define REWARD_FACTOR 0.2
 #define NUM_OLD_STATES 5
 #define INITIAL_WINDOW_SIZE 10
-#define NUM_PAST_ACTIONS 1 
+#define NUM_PAST_ACTIONS 2 
+#define WINDOW_SIZE_INTERVAL 5
+#define	LATENCY_CUTOFF 50
 
 /* Congestion controller interface */
 

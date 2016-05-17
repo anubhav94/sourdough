@@ -4,7 +4,7 @@
 #include <ctime>
 #include "controller.hh"
 #include "timestamp.hh"
-
+#include <math.h>
 using namespace std;
 
 
@@ -45,7 +45,7 @@ void Controller::do_best_action()
         if (past_states[i].window_size_state != 0)
           markov_chain[past_states[i]] = (markov_chain[past_states[i]] * (1 - (REWARD_FACTOR * ratio_factor))) + (cur_reward * REWARD_FACTOR * ratio_factor);
     }
-    markov_chain[current_state] = (markov_chain[current_state] * (1 - REWARD_FACTOR) + (reward() * REWARD_FACTOR));
+    markov_chain[current_state] = (markov_chain[current_state] * (1 - REWARD_FACTOR) + (cur_reward * REWARD_FACTOR));
 
 
     // Remove oldest state
@@ -71,7 +71,7 @@ void Controller::do_best_action()
 		temp.pastaction[j] = current_state.pastaction[j-1];
 	}
         temp.pastaction[0] = static_cast<Controller::Action>(i);
-	temp.window_size_state = this->get_next_window_size(static_cast<Controller::Action>(i));
+	temp.window_size_state = ((this->get_next_window_size(static_cast<Controller::Action>(i)) / WINDOW_SIZE_INTERVAL) * WINDOW_SIZE_INTERVAL);
 	temp.latency = current_state.latency;
 
 	double v;
@@ -113,8 +113,10 @@ double Controller::reward()
     //double delta_latency = latency - old_latency;
     double delta_throughput = throughput - old_throughput; 
     
-    double reward = delta_throughput - ((latency/10) * (current_state.pastaction[0]-5)) ;  
-    
+    double reward = delta_throughput - ((latency - LATENCY_CUTOFF) * (pow(2,(current_state.pastaction[0]-5))));  
+	
+    cerr << "pastaction: " << current_state.pastaction[0] << " pow: " << pow(2,(current_state.pastaction[0]-5)) << endl;   
+ 
     cerr << "Reward: " << reward << " latency: " << latency << " delta_throughput: " << delta_throughput << endl; 
     return reward;
 }
@@ -187,7 +189,7 @@ void Controller::take_action(Controller::Action a)
 	current_state.pastaction[i] = current_state.pastaction[i-1];
     }
     current_state.pastaction[0] = a;
-    current_state.window_size_state = nw;
+    current_state.window_size_state = ((nw/WINDOW_SIZE_INTERVAL)*WINDOW_SIZE_INTERVAL);
     current_state.latency = ((unsigned int)latency) / 100;
 }
 
