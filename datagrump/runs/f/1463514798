@@ -1,0 +1,12 @@
+Can't exec "./receiver": No such file or directory at ./run-contest line 18.
+No such file or directory at ./run-contest line 18.
+sh: 1: ./sender: not found
+Died on std::runtime_error: `sh -c ./sender $MAHIMAHI_BASE 9090': process exited with failure status 127
+Died on std::runtime_error: `packetshell': process exited with failure status 1
+Died on std::runtime_error: `mm-link /usr/local/bin/../share/mahimahi/traces/trace_sine.down /usr/local/bin/../share/mahimahi/traces/trace_sine.up --once --uplink-log=/tmp/contest_uplink_log -- sh -c ./sender $MAHIMAHI_BASE 9090': process exited with failure status 1
+Died on std::runtime_error: `packetshell': process exited with failure status 1
+
+Use of uninitialized value $arrival_sum in division (/) at /usr/local/bin/mm-throughput-graph line 149, <> line 28.
+Use of uninitialized value $departure_sum in division (/) at /usr/local/bin/mm-throughput-graph line 150, <> line 28.
+Must have at least one departure event at /usr/local/bin/mm-throughput-graph line 153, <> line 28.
+mm-throughput-graph exited with error. NOT uploading at ./run-contest line 54.

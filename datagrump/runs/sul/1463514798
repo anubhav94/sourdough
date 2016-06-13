@@ -1,0 +1,28 @@
+# mahimahi mm-link (Uplink) [/usr/local/bin/../share/mahimahi/traces/trace_sine.down] > /tmp/contest_uplink_log
+# command line: 'mm-link' '/usr/local/bin/../share/mahimahi/traces/trace_sine.down' '/usr/local/bin/../share/mahimahi/traces/trace_sine.up' '--once' '--uplink-log=/tmp/contest_uplink_log' '--' 'sh' '-c' './sender $MAHIMAHI_BASE 9090'
+# queue: infinite
+# base timestamp: 34
+# mahimahi config: [delay 20 ms] 
+35 # 1504
+37 # 1504
+37 # 1504
+38 # 1504
+41 # 1504
+42 # 1504
+43 # 1504
+43 # 1504
+45 # 1504
+45 # 1504
+46 # 1504
+49 # 1504
+49 # 1504
+50 # 1504
+50 # 1504
+51 # 1504
+51 # 1504
+54 # 1504
+56 # 1504
+57 # 1504
+58 # 1504
+59 # 1504
+59 # 1504

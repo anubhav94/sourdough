@@ -1,0 +1,8 @@
+terminate called after throwing an instance of 'unix_error'
+  what():  bind: Address already in use
+Died on std::runtime_error: /usr/local/bin/../share/mahimahi/traces/trace_sine_long.up: error opening for reading
+Died on std::runtime_error: /usr/local/bin/../share/mahimahi/traces/trace_sine_long.down: error opening for reading
+Died on std::runtime_error: `downlink': process exited with failure status 1
+Died on std::runtime_error: `mm-link /usr/local/bin/../share/mahimahi/traces/trace_sine_long.down /usr/local/bin/../share/mahimahi/traces/trace_sine_long.up --once --uplink-log=/tmp/contest_uplink_log -- sh -c ./sender $MAHIMAHI_BASE 9090': process exited with failure status 1
+Died on std::runtime_error: `packetshell': process exited with failure status 1
+

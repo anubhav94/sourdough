@@ -1,0 +1,147 @@
+terminate called after throwing an instance of 'unix_error'
+  what():  bind: Address already in use
+Sending to 100.64.0.1:9090
+5
+Reward: 5020.24 latency: 42.4 delta_throughput: 5105.04
+Current state: 10 0
+-5
+-4
+-3
+-2
+-1
+Action: 5 Value: 1004.05
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 10 Taking Action: 7
+
+7
+Reward: 14.24 latency: 49.4197 delta_throughput: 14.24
+Current state: 10 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+-2
+-1
+Action: 5 Value: 984.252
+Action: 6 Value: -1
+Action: 7 Value: 1.248
+-3
+-4
+Action: 10 Value: -5
+num_unvisited: 9 Taking Action: 2
+
+2
+Reward: 45.5969 latency: 45.5969 delta_throughput: 0
+Current state: 5 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+-3
+Action: 3 Value: -2
+Action: 4 Value: -1
+0
+-1
+Action: 7 Value: 2.13498
+Action: 8 Value: -3
+Action: 9 Value: -4
+-5
+num_unvisited: 10 Taking Action: 7
+
+7
+Reward: -4741.92 latency: 44.5454 delta_throughput: -4741.92
+Current state: 10 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -88.2534
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 984.252
+Action: 6 Value: -1
+Action: 7 Value: -946.676
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 6
+
+6
+Reward: -161.029 latency: 44.1831 delta_throughput: -28.48
+Current state: 10 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -88.2534
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 984.252
+Action: 6 Value: -33.0058
+Action: 7 Value: -930.963
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 2
+
+2
+Reward: -34.5436 latency: 43.7764 delta_throughput: -78.32
+Current state: 5 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+-2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 11 Taking Action: 4
+
+4
+Reward: 129.826 latency: 43.2753 delta_throughput: 0
+Current state: 5 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+-2
+Action: 4 Value: 25.1652
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+-4
+Action: 10 Value: -5
+num_unvisited: 10 Taking Action: 4
+
+4
+Reward: 23.9903 latency: 43.5968 delta_throughput: -106.8
+Current state: 5 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+-1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+-3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 11 Taking Action: 3
+
+3
+Reward: 187.276 latency: 43.2591 delta_throughput: 14.24
+Current state: 0 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: 35.8553
+Action: 4 Value: -1
+0
+-1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+-5
+num_unvisited: 10 Taking Action: 4
+

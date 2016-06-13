@@ -13,7 +13,7 @@
 #define INITIAL_WINDOW_SIZE 10
 #define NUM_PAST_ACTIONS 2 
 #define WINDOW_SIZE_INTERVAL 5
-#define	LATENCY_CUTOFF 50
+#define	LATENCY_CUTOFF 100
 
 /* Congestion controller interface */
 

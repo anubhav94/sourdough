@@ -1,0 +1,2230 @@
+Listening on :::9090
+Sending to 100.64.0.1:9090
+Reward: 5068.32 latency: 41.2 delta_throughput: 5076.56
+Reward: 5068.32 latency: 41.2 delta_throughput: 5076.56
+Current state: 10 0
+-5
+-4
+-3
+-2
+-1
+Action: 5 Value: 1013.66
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 9
+
+Reward: 14.2857 latency: 47.3905 delta_throughput: 42.72
+Reward: 14.2857 latency: 47.3905 delta_throughput: 42.72
+Current state: 18 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 7
+
+Reward: 0 latency: 46.9811 delta_throughput: 0
+Reward: 0 latency: 46.9811 delta_throughput: 0
+Current state: 20 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 6
+
+Reward: -4513.4 latency: 45.1883 delta_throughput: -4499.84
+Reward: -4513.4 latency: 45.1883 delta_throughput: -4499.84
+Current state: 21 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 9
+
+Reward: 71.1029 latency: 47.6285 delta_throughput: 99.68
+Reward: 71.1029 latency: 47.6285 delta_throughput: 99.68
+Current state: 29 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 4
+
+Reward: -6.949 latency: 48.0367 delta_throughput: -21.36
+Reward: -6.949 latency: 48.0367 delta_throughput: -21.36
+Current state: 28 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 2
+
+Reward: -16.5437 latency: 48.1633 delta_throughput: -21.36
+Reward: -16.5437 latency: 48.1633 delta_throughput: -21.36
+Current state: 24 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 1
+
+Reward: -81.8077 latency: 53.7615 delta_throughput: -92.56
+Reward: -81.8077 latency: 53.7615 delta_throughput: -92.56
+Current state: 16 0
+Action: 0 Value: -5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 0
+
+Reward: -230.77 latency: 46.6714 delta_throughput: -263.44
+Reward: -230.77 latency: 46.6714 delta_throughput: -263.44
+Current state: 1 0
+Action: 0 Value: -50.154
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 9
+
+Reward: -113.763 latency: 47.2043 delta_throughput: -85.44
+Reward: -113.763 latency: 47.2043 delta_throughput: -85.44
+Current state: 9 0
+Action: 0 Value: -51.4262
+Action: 1 Value: -4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 5
+
+Reward: -17.0036 latency: 49.4178 delta_throughput: -7.12
+Reward: -17.0036 latency: 49.4178 delta_throughput: -7.12
+Current state: 9 0
+Action: 0 Value: -51.4262
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: -3.40071
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 6
+
+Reward: 49.5656 latency: 48.3813 delta_throughput: 64.08
+Reward: 49.5656 latency: 48.3813 delta_throughput: 64.08
+Current state: 10 0
+Action: 0 Value: -51.4262
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 993.676
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -0.336005
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 1
+
+Reward: -97.0351 latency: 48.8243 delta_throughput: -106.8
+Reward: -97.0351 latency: 48.8243 delta_throughput: -106.8
+Current state: 2 0
+Action: 0 Value: -51.4262
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 9
+
+Reward: 13.3418 latency: 48.9637 delta_throughput: 42.72
+Reward: 13.3418 latency: 48.9637 delta_throughput: 42.72
+Current state: 10 0
+Action: 0 Value: -51.4262
+Action: 1 Value: -21.8881
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 993.676
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -0.336005
+Action: 10 Value: -5
+num_unvisited: 5 Taking Action: 6
+
+Reward: -72.3499 latency: 51.2995 delta_throughput: -56.96
+Reward: -72.3499 latency: 51.2995 delta_throughput: -56.96
+Current state: 11 0
+Action: 0 Value: -51.4262
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 5
+
+Reward: 79.6587 latency: 64.5063 delta_throughput: 92.56
+Reward: 79.6587 latency: 64.5063 delta_throughput: 92.56
+Current state: 11 0
+Action: 0 Value: -51.4262
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 15.9317
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 3
+
+Reward: 21.1808 latency: 52.9519 delta_throughput: 0
+Reward: 21.1808 latency: 52.9519 delta_throughput: 0
+Current state: 9 0
+Action: 0 Value: -51.4262
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: -2.34139
+Action: 6 Value: 6.99016
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 0
+
+Reward: -43.5758 latency: 49.6345 delta_throughput: -78.32
+Reward: -43.5758 latency: 49.6345 delta_throughput: -78.32
+Current state: 1 0
+Action: 0 Value: -49.8561
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 8
+
+Reward: -111.737 latency: 49.372 delta_throughput: -106.8
+Reward: -111.737 latency: 49.372 delta_throughput: -106.8
+Current state: 5 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+Action: 2 Value: -3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 5
+
+Reward: 39.3989 latency: 52.2056 delta_throughput: 49.84
+Reward: 39.3989 latency: 52.2056 delta_throughput: 49.84
+Current state: 5 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 7.87978
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 8
+
+Reward: 52.0828 latency: 48.7717 delta_throughput: 56.96
+Reward: 52.0828 latency: 48.7717 delta_throughput: 56.96
+Current state: 9 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: -2.34139
+Action: 6 Value: 6.99016
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 9
+
+Reward: 55.8965 latency: 49.2392 delta_throughput: 85.44
+Reward: 55.8965 latency: 49.2392 delta_throughput: 85.44
+Current state: 17 0
+Action: 0 Value: -51.0937
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 8
+
+Reward: 130.134 latency: 51.4646 delta_throughput: 135.28
+Reward: 130.134 latency: 51.4646 delta_throughput: 135.28
+Current state: 21 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.6612
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 4
+
+Reward: 93.9047 latency: 51.9488 delta_throughput: 78.32
+Reward: 93.9047 latency: 51.9488 delta_throughput: 78.32
+Current state: 20 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -883.988
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 5
+
+Reward: 11.3648 latency: 49.9759 delta_throughput: 21.36
+Reward: 11.3648 latency: 49.9759 delta_throughput: 21.36
+Current state: 20 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 2.27296
+Action: 6 Value: -883.988
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 6
+
+Reward: -102.73 latency: 57.6346 delta_throughput: -85.44
+Reward: -102.73 latency: 57.6346 delta_throughput: -85.44
+Current state: 21 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: 17.8486
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.6612
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 9
+
+Reward: 89.2889 latency: 64.7851 delta_throughput: 128.16
+Reward: 89.2889 latency: 64.7851 delta_throughput: 128.16
+Current state: 29 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -2.47688
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 9
+
+Reward: -49.7857 latency: 59.2428 delta_throughput: -14.24
+Reward: -49.7857 latency: 59.2428 delta_throughput: -14.24
+Current state: 37 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 8
+
+Reward: 256.779 latency: 66.6134 delta_throughput: 263.44
+Reward: 256.779 latency: 66.6134 delta_throughput: 263.44
+Current state: 41 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 9
+
+Reward: 146.116 latency: 53.1392 delta_throughput: 178
+Reward: 146.116 latency: 53.1392 delta_throughput: 178
+Current state: 49 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 2
+
+Reward: 13.7871 latency: 66.6713 delta_throughput: 7.12
+Reward: 13.7871 latency: 66.6713 delta_throughput: 7.12
+Current state: 45 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 0
+
+Reward: -132.087 latency: 75.761 delta_throughput: -185.12
+Reward: -132.087 latency: 75.761 delta_throughput: -185.12
+Current state: 29 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -2.47688
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -7.75843
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 3
+
+Reward: -81.658 latency: 80.655 delta_throughput: -113.92
+Reward: -81.658 latency: 80.655 delta_throughput: -113.92
+Current state: 27 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 8
+
+Reward: -70.6428 latency: 65.6282 delta_throughput: -64.08
+Reward: -70.6428 latency: 65.6282 delta_throughput: -64.08
+Current state: 31 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 3
+
+Reward: -11.9897 latency: 59.0257 delta_throughput: -35.6
+Reward: -11.9897 latency: 59.0257 delta_throughput: -35.6
+Current state: 29 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -18.9858
+Action: 4 Value: -2.47688
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -7.75843
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 0
+
+Reward: -44.987 latency: 47.6186 delta_throughput: -78.32
+Reward: -44.987 latency: 47.6186 delta_throughput: -78.32
+Current state: 13 0
+Action: 0 Value: -51.0937
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 8
+
+Reward: 73.7526 latency: 45.6736 delta_throughput: 78.32
+Reward: 73.7526 latency: 45.6736 delta_throughput: 78.32
+Current state: 17 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: 25.0323
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 1
+
+Reward: -161.476 latency: 47.0208 delta_throughput: -170.88
+Reward: -161.476 latency: 47.0208 delta_throughput: -170.88
+Current state: 9 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: -2.34139
+Action: 6 Value: 6.99016
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.4224
+Action: 10 Value: -5
+num_unvisited: 5 Taking Action: 3
+
+Reward: -100.934 latency: 50.2662 delta_throughput: -121.04
+Reward: -100.934 latency: 50.2662 delta_throughput: -121.04
+Current state: 7 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 8
+
+Reward: -40.6924 latency: 50.9239 delta_throughput: -35.6
+Reward: -40.6924 latency: 50.9239 delta_throughput: -35.6
+Current state: 11 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: 1.71192
+Action: 4 Value: -1
+Action: 5 Value: 16.0367
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 1
+
+Reward: -82.5318 latency: 50.1408 delta_throughput: -92.56
+Reward: -82.5318 latency: 50.1408 delta_throughput: -92.56
+Current state: 3 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 3
+
+Reward: -87.5196 latency: 48.201 delta_throughput: -106.8
+Reward: -87.5196 latency: 48.201 delta_throughput: -106.8
+Current state: 1 0
+Action: 0 Value: -51.0937
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -19.1039
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 0
+
+Reward: 5.04495 latency: 47.8928 delta_throughput: -28.48
+Reward: 5.04495 latency: 47.8928 delta_throughput: -28.48
+Current state: 1 0
+Action: 0 Value: -39.866
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -18.6209
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 3
+
+Reward: 19.2814 latency: 48.2035 delta_throughput: 0
+Reward: 19.2814 latency: 48.2035 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -38.683
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -11.0405
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 3
+
+Reward: 19.1299 latency: 47.8248 delta_throughput: 0
+Reward: 19.1299 latency: 47.8248 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -38.683
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -4.52367
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 7
+
+Reward: 28.48 latency: 46.6017 delta_throughput: 28.48
+Reward: 28.48 latency: 46.6017 delta_throughput: 28.48
+Current state: 3 0
+Action: 0 Value: -38.683
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -3.86359
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 2
+
+Reward: 4.72606 latency: 47.2606 delta_throughput: 0
+Reward: 4.72606 latency: 47.2606 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -38.683
+Action: 1 Value: -4
+Action: 2 Value: -1.45479
+Action: 3 Value: -3.86359
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: 4.1086
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 5 Taking Action: 6
+
+Reward: -28.2983 latency: 46.8609 delta_throughput: -14.24
+Reward: -28.2983 latency: 46.8609 delta_throughput: -14.24
+Current state: 2 0
+Action: 0 Value: -38.683
+Action: 1 Value: -4
+Action: 2 Value: -1.99166
+Action: 3 Value: -3.86359
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -1.968
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 3
+
+Reward: 18.3619 latency: 45.9046 delta_throughput: 0
+Reward: 18.3619 latency: 45.9046 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -38.683
+Action: 1 Value: -4
+Action: 2 Value: -1.99166
+Action: 3 Value: 0.581495
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -5.96323
+Action: 7 Value: 4.1086
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 7
+
+Reward: 14.24 latency: 45.9957 delta_throughput: 14.24
+Reward: 14.24 latency: 45.9957 delta_throughput: 14.24
+Current state: 3 0
+Action: 0 Value: -38.683
+Action: 1 Value: -4
+Action: 2 Value: -1.99166
+Action: 3 Value: 0.854665
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 0
+
+Reward: 32.9094 latency: 47.0135 delta_throughput: 0
+Reward: 32.9094 latency: 47.0135 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -24.3645
+Action: 1 Value: -4
+Action: 2 Value: -1.99166
+Action: 3 Value: 0.854665
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -5.96323
+Action: 7 Value: 6.67037
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 7
+
+Reward: -7.12 latency: 52.0154 delta_throughput: -7.12
+Reward: -7.12 latency: 52.0154 delta_throughput: -7.12
+Current state: 3 0
+Action: 0 Value: -24.0197
+Action: 1 Value: -4
+Action: 2 Value: -1.99166
+Action: 3 Value: 0.854665
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 0
+
+Reward: 25.919 latency: 57.37 delta_throughput: -14.24
+Reward: 25.919 latency: 57.37 delta_throughput: -14.24
+Current state: 1 0
+Action: 0 Value: -14.0319
+Action: 1 Value: -4
+Action: 2 Value: -1.99166
+Action: 3 Value: 0.854665
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -5.96323
+Action: 7 Value: 4.35243
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 2
+
+Reward: -1.63703 latency: 54.8297 delta_throughput: -7.12
+Reward: -1.63703 latency: 54.8297 delta_throughput: -7.12
+Current state: 1 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+Action: 2 Value: -1.92073
+Action: 3 Value: 0.854665
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -5.96323
+Action: 7 Value: 4.35243
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 7
+
+Reward: 28.48 latency: 54.0928 delta_throughput: 28.48
+Reward: 28.48 latency: 54.0928 delta_throughput: 28.48
+Current state: 3 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+Action: 2 Value: -1.31272
+Action: 3 Value: 0.854665
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 9
+
+Reward: 61.9012 latency: 51.098 delta_throughput: 92.56
+Reward: 61.9012 latency: 51.098 delta_throughput: 92.56
+Current state: 11 0
+Action: 0 Value: -13.784
+Action: 1 Value: -21.0626
+Action: 2 Value: -3
+Action: 3 Value: 1.71192
+Action: 4 Value: -1
+Action: 5 Value: 16.0367
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 7
+
+Reward: 64.08 latency: 52.6575 delta_throughput: 64.08
+Reward: 64.08 latency: 52.6575 delta_throughput: 64.08
+Current state: 13 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: 8.874
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 4
+
+Reward: 101.539 latency: 53.6626 delta_throughput: 85.44
+Reward: 101.539 latency: 53.6626 delta_throughput: 85.44
+Current state: 12 0
+Action: 0 Value: -13.784
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 5
+
+Reward: 26.2517 latency: 46.7417 delta_throughput: 35.6
+Reward: 26.2517 latency: 46.7417 delta_throughput: 35.6
+Current state: 12 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 5.25033
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 5
+
+Reward: -74.8751 latency: 53.9755 delta_throughput: -64.08
+Reward: -74.8751 latency: 53.9755 delta_throughput: -64.08
+Current state: 12 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: -12.0568
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 5
+
+Reward: -20.1218 latency: 65.0088 delta_throughput: -7.12
+Reward: -20.1218 latency: 65.0088 delta_throughput: -7.12
+Current state: 12 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: -13.7988
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 3
+
+Reward: 34.2623 latency: 50.0558 delta_throughput: 14.24
+Reward: 34.2623 latency: 50.0558 delta_throughput: 14.24
+Current state: 10 0
+Action: 0 Value: -13.784
+Action: 1 Value: -21.8881
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 993.676
+Action: 6 Value: -13.3714
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -0.336005
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 9
+
+Reward: -6.13422 latency: 57.6904 delta_throughput: 28.48
+Reward: -6.13422 latency: 57.6904 delta_throughput: 28.48
+Current state: 18 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -91.8359
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 9 Taking Action: 3
+
+Reward: 87.585 latency: 58.7625 delta_throughput: 64.08
+Reward: 87.585 latency: 58.7625 delta_throughput: 64.08
+Current state: 16 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 3
+
+Reward: 47.8164 latency: 48.3411 delta_throughput: 28.48
+Reward: 47.8164 latency: 48.3411 delta_throughput: 28.48
+Current state: 14 0
+Action: 0 Value: -13.784
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 1
+
+Reward: -117.888 latency: 51.3581 delta_throughput: -128.16
+Reward: -117.888 latency: 51.3581 delta_throughput: -128.16
+Current state: 6 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 3
+
+Reward: -43.2298 latency: 52.1256 delta_throughput: -64.08
+Reward: -43.2298 latency: 52.1256 delta_throughput: -64.08
+Current state: 4 0
+Action: 0 Value: -13.784
+Action: 1 Value: -4
+Action: 2 Value: -1.31272
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 7 Taking Action: 1
+
+Reward: -97.0225 latency: 48.8873 delta_throughput: -106.8
+Reward: -97.0225 latency: 48.8873 delta_throughput: -106.8
+Current state: 1 0
+Action: 0 Value: -13.784
+Action: 1 Value: -22.6045
+Action: 2 Value: -1.31272
+Action: 3 Value: 0.854665
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -5.96323
+Action: 7 Value: 10.2324
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 3 Taking Action: 4
+
+Reward: -13.7804 latency: 48.9986 delta_throughput: -28.48
+Reward: -13.7804 latency: 48.9986 delta_throughput: -28.48
+Current state: 1 0
+Action: 0 Value: -13.784
+Action: 1 Value: -22.428
+Action: 2 Value: -1.31272
+Action: 3 Value: 0.854665
+Action: 4 Value: -3.55609
+Action: 5 Value: 0
+Action: 6 Value: -5.96323
+Action: 7 Value: 10.2324
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 4
+
+Reward: -28.3113 latency: 48.0288 delta_throughput: -42.72
+Reward: -28.3113 latency: 48.0288 delta_throughput: -42.72
+Current state: 1 0
+Action: 0 Value: -13.784
+Action: 1 Value: -22.428
+Action: 2 Value: -1.31272
+Action: 3 Value: 0.854665
+Action: 4 Value: -8.90322
+Action: 5 Value: 0
+Action: 6 Value: -5.96323
+Action: 7 Value: 10.2324
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 7
+
+Reward: 14.24 latency: 48.926 delta_throughput: 14.24
+Reward: 14.24 latency: 48.926 delta_throughput: 14.24
+Current state: 3 0
+Action: 0 Value: -13.784
+Action: 1 Value: -22.428
+Action: 2 Value: -1.31272
+Action: 3 Value: 0.854665
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.2782
+Action: 10 Value: -5
+num_unvisited: 5 Taking Action: 3
+
+Reward: 20.0562 latency: 50.1404 delta_throughput: 0
+Reward: 20.0562 latency: 50.1404 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -13.784
+Action: 1 Value: -22.428
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.69497
+Action: 4 Value: -8.44036
+Action: 5 Value: 0
+Action: 6 Value: -5.96323
+Action: 7 Value: 11.2144
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 6
+
+Reward: -14.6155 latency: 48.7184 delta_throughput: 0
+Reward: -14.6155 latency: 48.7184 delta_throughput: 0
+Current state: 2 0
+Action: 0 Value: -13.784
+Action: 1 Value: -22.428
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: -8.44036
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -1.968
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 0
+
+Reward: 34.4133 latency: 49.1619 delta_throughput: 0
+Reward: 34.4133 latency: 49.1619 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -4.14456
+Action: 1 Value: -22.428
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: -8.44036
+Action: 5 Value: 0
+Action: 6 Value: -6.85154
+Action: 7 Value: 11.2144
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 7
+
+Reward: 7.12 latency: 51.7299 delta_throughput: 7.12
+Reward: 7.12 latency: 51.7299 delta_throughput: 7.12
+Current state: 3 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -22.428
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.2782
+Action: 10 Value: -5
+num_unvisited: 5 Taking Action: 4
+
+Reward: 24.6985 latency: 58.5951 delta_throughput: 7.12
+Reward: 24.6985 latency: 58.5951 delta_throughput: 7.12
+Current state: 2 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -22.428
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: -8.44036
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -1.968
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 1
+
+Reward: -17.3636 latency: 55.5818 delta_throughput: -28.48
+Reward: -17.3636 latency: 55.5818 delta_throughput: -28.48
+Current state: 1 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -21.4151
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: -8.44036
+Action: 5 Value: 0
+Action: 6 Value: -6.85154
+Action: 7 Value: 10.6816
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 7
+
+Reward: 28.48 latency: 52.4744 delta_throughput: 28.48
+Reward: 28.48 latency: 52.4744 delta_throughput: 28.48
+Current state: 3 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -20.4172
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: 3.70964
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.2782
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 5
+
+Reward: 18.4921 latency: 49.9394 delta_throughput: 28.48
+Reward: 18.4921 latency: 49.9394 delta_throughput: 28.48
+Current state: 3 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -20.4172
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: 3.70964
+Action: 5 Value: 3.69843
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.2782
+Action: 10 Value: -5
+num_unvisited: 3 Taking Action: 9
+
+Reward: 63.2482 latency: 48.8531 delta_throughput: 92.56
+Reward: 63.2482 latency: 48.8531 delta_throughput: 92.56
+Current state: 11 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -21.0626
+Action: 2 Value: -3
+Action: 3 Value: 1.71192
+Action: 4 Value: -1
+Action: 5 Value: 16.0367
+Action: 6 Value: -1
+Action: 7 Value: 13.0225
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 8
+
+Reward: 59.2124 latency: 48.6755 delta_throughput: 64.08
+Reward: 59.2124 latency: 48.6755 delta_throughput: 64.08
+Current state: 15 0
+Action: 0 Value: -3.91927
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 8 Taking Action: 7
+
+Reward: 113.92 latency: 49.8309 delta_throughput: 113.92
+Reward: 113.92 latency: 49.8309 delta_throughput: 113.92
+Current state: 17 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -36.8039
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: 25.0323
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 7
+
+Reward: 56.96 latency: 54.9479 delta_throughput: 56.96
+Reward: 56.96 latency: 54.9479 delta_throughput: 56.96
+Current state: 19 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 8
+
+Reward: 87.5607 latency: 49.9928 delta_throughput: 92.56
+Reward: 87.5607 latency: 49.9928 delta_throughput: 92.56
+Current state: 23 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 1
+
+Reward: -10.2968 latency: 55.3161 delta_throughput: -21.36
+Reward: -10.2968 latency: 55.3161 delta_throughput: -21.36
+Current state: 15 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: 21.8995
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 7
+
+Reward: 0 latency: 48.173 delta_throughput: 0
+Reward: 0 latency: 48.173 delta_throughput: 0
+Current state: 17 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -36.8039
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: 11.3474
+Action: 8 Value: 25.0323
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 6
+
+Reward: -44.0307 latency: 51.8358 delta_throughput: -28.48
+Reward: -44.0307 latency: 51.8358 delta_throughput: -28.48
+Current state: 18 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: 16.555
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -91.8359
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 9 Taking Action: 5
+
+Reward: 53.7609 latency: 51.5957 delta_throughput: 64.08
+Reward: 53.7609 latency: 51.5957 delta_throughput: 64.08
+Current state: 18 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: 16.555
+Action: 4 Value: -1
+Action: 5 Value: 10.7522
+Action: 6 Value: -1
+Action: 7 Value: -91.8359
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 8
+
+Reward: -5.58157 latency: 55.8157 delta_throughput: 0
+Reward: -5.58157 latency: 55.8157 delta_throughput: 0
+Current state: 22 0
+-5
+-4
+-3
+-2
+-1
+0
+-1
+-2
+-3
+-4
+-5
+num_unvisited: 9 Taking Action: 0
+
+Reward: -61.0823 latency: 55.1396 delta_throughput: -99.68
+Reward: -61.0823 latency: 55.1396 delta_throughput: -99.68
+Current state: 6 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -20.4172
+Action: 2 Value: -3
+Action: 3 Value: -11.9815
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 7 Taking Action: 1
+
+Reward: -117.449 latency: 53.5573 delta_throughput: -128.16
+Reward: -117.449 latency: 53.5573 delta_throughput: -128.16
+Current state: 1 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -39.8235
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: -8.44036
+Action: 5 Value: 0
+Action: 6 Value: -6.85154
+Action: 7 Value: 14.3263
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 4
+
+Reward: -233.486 latency: 52.3803 delta_throughput: -249.2
+Reward: -233.486 latency: 52.3803 delta_throughput: -249.2
+Current state: 1 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -43.6968
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: -53.4495
+Action: 5 Value: 0
+Action: 6 Value: -6.85154
+Action: 7 Value: 14.3263
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 7
+
+Reward: -7.12 latency: 52.1422 delta_throughput: -7.12
+Reward: -7.12 latency: 52.1422 delta_throughput: -7.12
+Current state: 3 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -43.6968
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: 3.70964
+Action: 5 Value: 4.88942
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 21.639
+Action: 10 Value: -5
+num_unvisited: 3 Taking Action: 6
+
+Reward: 34.8643 latency: 49.919 delta_throughput: 49.84
+Reward: 34.8643 latency: 49.919 delta_throughput: 49.84
+Current state: 4 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -43.6968
+Action: 2 Value: -1.31272
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 3
+
+Reward: 5.92175 latency: 50.4044 delta_throughput: -14.24
+Reward: 5.92175 latency: 50.4044 delta_throughput: -14.24
+Current state: 2 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -43.6968
+Action: 2 Value: -1.31272
+Action: 3 Value: 4.30876
+Action: 4 Value: -52.5229
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -1.968
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 7
+
+Reward: 7.12 latency: 52.6175 delta_throughput: 7.12
+Reward: 7.12 latency: 52.6175 delta_throughput: 7.12
+Current state: 4 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -43.6968
+Action: 2 Value: -1.31272
+Action: 3 Value: -0.264937
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 2
+
+Reward: -30.2091 latency: 53.9093 delta_throughput: -35.6
+Reward: -30.2091 latency: 53.9093 delta_throughput: -35.6
+Current state: 1 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09199
+Action: 3 Value: 4.30876
+Action: 4 Value: -52.5229
+Action: 5 Value: 0
+Action: 6 Value: -6.85154
+Action: 7 Value: 10.5336
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 7
+
+Reward: -7.12 latency: 54.5183 delta_throughput: -7.12
+Reward: -7.12 latency: 54.5183 delta_throughput: -7.12
+Current state: 3 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 4.30876
+Action: 4 Value: 3.70964
+Action: 5 Value: 4.88942
+Action: 6 Value: 6.16784
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 21.639
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 9
+
+Reward: 52.8881 latency: 54.2531 delta_throughput: 85.44
+Reward: 52.8881 latency: 54.2531 delta_throughput: 85.44
+Current state: 11 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -21.0626
+Action: 2 Value: -3
+Action: 3 Value: 1.71192
+Action: 4 Value: -1
+Action: 5 Value: 16.0367
+Action: 6 Value: -1
+Action: 7 Value: 13.0225
+Action: 8 Value: 11.532
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 5 Taking Action: 7
+
+Reward: 113.92 latency: 56.3529 delta_throughput: 113.92
+Reward: 113.92 latency: 56.3529 delta_throughput: 113.92
+Current state: 13 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: 19.6426
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: 8.874
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 6 Taking Action: 5
+
+Reward: 46.4095 latency: 52.7523 delta_throughput: 56.96
+Reward: 46.4095 latency: 52.7523 delta_throughput: 56.96
+Current state: 13 0
+Action: 0 Value: -3.91927
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: 19.6426
+Action: 5 Value: 9.28191
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: 8.874
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 5 Taking Action: 0
+
+Reward: -35.7639 latency: 50.623 delta_throughput: -71.2
+Reward: -35.7639 latency: 50.623 delta_throughput: -71.2
+Current state: 1 0
+Action: 0 Value: -10.2882
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 4.30876
+Action: 4 Value: -52.5229
+Action: 5 Value: 0
+Action: 6 Value: -6.85154
+Action: 7 Value: 7.92055
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 7
+
+Reward: -99.68 latency: 50.6607 delta_throughput: -99.68
+Reward: -99.68 latency: 50.6607 delta_throughput: -99.68
+Current state: 3 0
+Action: 0 Value: -12.076
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 4.30876
+Action: 4 Value: 3.70964
+Action: 5 Value: 4.88942
+Action: 6 Value: 6.16784
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 29.6095
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 9
+
+Reward: -37.5716 latency: 50.7527 delta_throughput: -7.12
+Reward: -37.5716 latency: 50.7527 delta_throughput: -7.12
+Current state: 11 0
+Action: 0 Value: -12.076
+Action: 1 Value: -21.0626
+Action: 2 Value: -3
+Action: 3 Value: 1.71192
+Action: 4 Value: -1
+Action: 5 Value: 16.0367
+Action: 6 Value: -1
+Action: 7 Value: 33.4661
+Action: 8 Value: 11.532
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 5 Taking Action: 9
+
+Reward: 151.326 latency: 56.3238 delta_throughput: 185.12
+Reward: 151.326 latency: 56.3238 delta_throughput: 185.12
+Current state: 19 0
+Action: 0 Value: -5
+Action: 1 Value: -4
+Action: 2 Value: -3
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 0
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: 14.604
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 8 Taking Action: 0
+
+Reward: 27.829 latency: 49.9271 delta_throughput: -7.12
+Reward: 27.829 latency: 49.9271 delta_throughput: -7.12
+Current state: 3 0
+Action: 0 Value: -12.076
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 4.30876
+Action: 4 Value: 3.70964
+Action: 5 Value: 4.88942
+Action: 6 Value: 6.16784
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 18.8763
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 9
+
+Reward: -108.819 latency: 50.8308 delta_throughput: -78.32
+Reward: -108.819 latency: 50.8308 delta_throughput: -78.32
+Current state: 11 0
+Action: 0 Value: -12.076
+Action: 1 Value: -21.0626
+Action: 2 Value: -3
+Action: 3 Value: 1.71192
+Action: 4 Value: -1
+Action: 5 Value: 16.0367
+Action: 6 Value: -1
+Action: 7 Value: 33.4661
+Action: 8 Value: 11.532
+Action: 9 Value: 27.0804
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 0
+
+Reward: -63.8882 latency: 61.3025 delta_throughput: -106.8
+Reward: -63.8882 latency: 61.3025 delta_throughput: -106.8
+Current state: 1 0
+Action: 0 Value: -22.4385
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 4.30876
+Action: 4 Value: -52.5229
+Action: 5 Value: 0
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 3
+
+Reward: -62.234 latency: 58.015 delta_throughput: -85.44
+Reward: -62.234 latency: 58.015 delta_throughput: -85.44
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: -8.99979
+Action: 4 Value: -52.5229
+Action: 5 Value: 0
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 2 Taking Action: 5
+
+Reward: -4.02444 latency: 55.7222 delta_throughput: 7.12
+Reward: -4.02444 latency: 55.7222 delta_throughput: 7.12
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: -8.90028
+Action: 4 Value: -52.5229
+Action: 5 Value: -0.804887
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 5
+
+Reward: -11.13 latency: 55.65 delta_throughput: 0
+Reward: -11.13 latency: 55.65 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: -8.90028
+Action: 4 Value: -52.5229
+Action: 5 Value: -3.03511
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 5
+
+Reward: -10.8633 latency: 54.3165 delta_throughput: 0
+Reward: -10.8633 latency: 54.3165 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: -8.90028
+Action: 4 Value: -52.5229
+Action: 5 Value: -4.726
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 5
+
+Reward: -18.037 latency: 54.5848 delta_throughput: -7.12
+Reward: -18.037 latency: 54.5848 delta_throughput: -7.12
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: -8.90028
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.60117
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 21.4455 latency: 53.6137 delta_throughput: 0
+Reward: 21.4455 latency: 53.6137 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: -2.83113
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 27.9068 latency: 51.9671 delta_throughput: 7.12
+Reward: 27.9068 latency: 51.9671 delta_throughput: 7.12
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 3.80827
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 20.7482 latency: 51.8704 delta_throughput: 0
+Reward: 20.7482 latency: 51.8704 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 7.46729
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 20.7533 latency: 51.8834 delta_throughput: 0
+Reward: 20.7533 latency: 51.8834 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 10.3371
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 13.998 latency: 52.795 delta_throughput: -7.12
+Reward: 13.998 latency: 52.795 delta_throughput: -7.12
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 11.1278
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 20.4096 latency: 51.024 delta_throughput: 0
+Reward: 20.4096 latency: 51.024 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 13.1327
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 27.1878 latency: 50.1694 delta_throughput: 7.12
+Reward: 27.1878 latency: 50.1694 delta_throughput: 7.12
+Current state: 1 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 16.1686
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -23.4645
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 8
+
+Reward: 52.0535 latency: 49.065 delta_throughput: 56.96
+Reward: 52.0535 latency: 49.065 delta_throughput: 56.96
+Current state: 5 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 8.76384
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: 8.97416
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 8
+
+Reward: 16.2042 latency: 51.5585 delta_throughput: 21.36
+Reward: 16.2042 latency: 51.5585 delta_throughput: 21.36
+Current state: 9 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -3
+Action: 3 Value: -22.1648
+Action: 4 Value: -1
+Action: 5 Value: -2.34139
+Action: 6 Value: 6.99016
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.4224
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 5
+
+Reward: 14.0695 latency: 72.0523 delta_throughput: 28.48
+Reward: 14.0695 latency: 72.0523 delta_throughput: 28.48
+Current state: 9 0
+Action: 0 Value: -23.2344
+Action: 1 Value: -43.6968
+Action: 2 Value: -3
+Action: 3 Value: -22.1648
+Action: 4 Value: -1
+Action: 5 Value: 0.940798
+Action: 6 Value: 6.99016
+Action: 7 Value: -2
+Action: 8 Value: -3
+Action: 9 Value: 10.4224
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 0
+
+Reward: -42.0124 latency: 72.2109 delta_throughput: -92.56
+Reward: -42.0124 latency: 72.2109 delta_throughput: -92.56
+Current state: 1 0
+Action: 0 Value: -26.99
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 16.8863
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -7.86961
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 5.64432 latency: 67.5108 delta_throughput: -21.36
+Reward: 5.64432 latency: 67.5108 delta_throughput: -21.36
+Current state: 1 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: 14.6379
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -7.86961
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 8
+
+Reward: 21.884 latency: 65.9597 delta_throughput: 28.48
+Reward: 21.884 latency: 65.9597 delta_throughput: 28.48
+Current state: 5 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -7.09255
+Action: 3 Value: -2
+Action: 4 Value: -1
+Action: 5 Value: 8.76384
+Action: 6 Value: -1
+Action: 7 Value: -2
+Action: 8 Value: 10.4931
+Action: 9 Value: -4
+Action: 10 Value: -5
+num_unvisited: 4 Taking Action: 2
+
+Reward: 6.21898 latency: 62.1898 delta_throughput: 0
+Reward: 6.21898 latency: 62.1898 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -4.43024
+Action: 3 Value: 14.7828
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 24.4283 latency: 61.0708 delta_throughput: 0
+Reward: 24.4283 latency: 61.0708 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 16.7119
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 1.73094 latency: 57.7273 delta_throughput: -21.36
+Reward: 1.73094 latency: 57.7273 delta_throughput: -21.36
+Current state: 1 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 13.476
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 22.0077 latency: 55.0191 delta_throughput: 0
+Reward: 22.0077 latency: 55.0191 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 15.3189
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 21.2142 latency: 53.0355 delta_throughput: 0
+Reward: 21.2142 latency: 53.0355 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 16.5923
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 20.9035 latency: 52.2588 delta_throughput: 0
+Reward: 20.9035 latency: 52.2588 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 17.5235
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 20.5918 latency: 51.4796 delta_throughput: 0
+Reward: 20.5918 latency: 51.4796 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -26.3373
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 18.1862
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 0
+
+Reward: 35.1039 latency: 50.1485 delta_throughput: 0
+Reward: 35.1039 latency: 50.1485 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -14.0491
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 18.5246
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 13.4135 latency: 51.3336 delta_throughput: -7.12
+Reward: 13.4135 latency: 51.3336 delta_throughput: -7.12
+Current state: 1 0
+Action: 0 Value: -13.4998
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 17.5024
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 20.2841 latency: 50.7102 delta_throughput: 0
+Reward: 20.2841 latency: 50.7102 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -13.4998
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 18.1032
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 27.0581 latency: 49.8453 delta_throughput: 7.12
+Reward: 27.0581 latency: 49.8453 delta_throughput: 7.12
+Current state: 1 0
+Action: 0 Value: -13.4998
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 20.0375
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 19.9843 latency: 49.9608 delta_throughput: 0
+Reward: 19.9843 latency: 49.9608 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -13.4998
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 20.026
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Reward: 19.8313 latency: 49.5782 delta_throughput: 0
+Reward: 19.8313 latency: 49.5782 delta_throughput: 0
+Current state: 1 0
+Action: 0 Value: -13.4998
+Action: 1 Value: -43.6968
+Action: 2 Value: -3.85307
+Action: 3 Value: 19.9839
+Action: 4 Value: -52.5229
+Action: 5 Value: -7.02023
+Action: 6 Value: -6.85154
+Action: 7 Value: -14.079
+Action: 8 Value: -1.75612
+Action: 9 Value: -25.7735
+Action: 10 Value: -5
+num_unvisited: 1 Taking Action: 3
+
+Average capacity: 6.99 Mbits/s
+Average throughput: 1.71 Mbits/s (24.5% utilization)
+95th percentile per-packet queueing delay: 35 ms
+95th percentile signal delay: 54 ms
